@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --Green:hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--Grey900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 384px;
+    width: 90%;
+    background-color: var(--Grey800);
+    border-radius: 15px;
+    padding: 42px;
+    text-align: center;
+}
+
+img {
+    max-width: 92px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 25px;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+h3 {
+    color: var(--Green);
+    font-size: 13px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+p {
+    color: var(--White);
+    font-weight: 200;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.links {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+a {
+    color: var(--White);
+    text-decoration: none;
+    padding: 15px 0px;
+    border-radius: 8px;
+    background-color: var(--Grey700);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+a:active {
+    background: var(--Green);
+    color: var(--Grey900);
+}
+
+/* Mobile Design */
+@media (max-width: 400px) {
+    .container {
+        padding: 25px;
+    }
+    
+}
